@@ -7,16 +7,14 @@ public class Actividad2 {
 
     public static void main(String[] args) throws Exception {
 
-            int contador = 0;
-            
+         
             FileReader fr = new FileReader("src/net/salesianos/ficheros/actividadsegunda.txt");
             BufferedReader bufread = new BufferedReader(fr);
             String cadena = bufread.readLine();
             String textoFichero = "";
 
-            while (contador < cadena.length()) {
-                textoFichero += cadena.charAt(contador) + "_" + (int)cadena.charAt(contador) + ",";
-                contador++;
+            for (int i = 0; i < cadena.length(); i++) {
+                textoFichero += cadena.charAt(i) + "_" + (int)cadena.charAt(i) + ",";
             }
 
             System.out.println(textoFichero);

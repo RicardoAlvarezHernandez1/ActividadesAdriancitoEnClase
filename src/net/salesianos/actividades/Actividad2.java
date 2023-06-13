@@ -14,10 +14,11 @@ public class Actividad2 {
             String textoFichero = "";
 
             for (int i = 0; i < cadena.length(); i++) {
+
                 textoFichero += cadena.charAt(i) + "_" + (int)cadena.charAt(i) + ",";
             }
 
-            System.out.println(textoFichero);
+            System.out.println(textoFichero.substring(0, textoFichero.length()-1));
             fr.close();
 
         
